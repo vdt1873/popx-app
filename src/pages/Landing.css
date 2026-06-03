@@ -1,0 +1,92 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  min-height: 844px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bubbles */
+.bubbles-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: #6C25FF;
+  opacity: 0.9;
+  animation: floatBubble 4s ease-in-out infinite;
+}
+
+@keyframes floatBubble {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* Content */
+.landing-content {
+  position: relative;
+  z-index: 10;
+  padding: 32px 28px 48px;
+  background: #ffffff;
+}
+
+.landing-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.landing-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #888888;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  text-align: center;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: #6C25FF;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.btn-primary:hover {
+  background: #5B1FE8;
+}
+
+.btn-secondary {
+  background: #f0eaff;
+  color: #6C25FF;
+}
+
+.btn-secondary:hover {
+  background: #e6ddff;
+}
